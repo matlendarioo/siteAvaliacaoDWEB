@@ -1,0 +1,37 @@
+@media (max-width: 767px) {
+            .header-content h1 {
+                font-size: 2rem;
+            }
+
+            .hero-content h2 {
+                font-size: 2rem;
+            }
+
+            .hero-image {
+                min-height: 400px;
+            }
+
+            .content-section1 h2 {
+                font-size: 1.5rem;
+            }
+
+            .content-section1 summary {
+                font-size: 1.1rem;
+            }
+
+            main {
+                padding: 20px;
+            }
+
+            .header h1 {
+                font-size: 2rem;
+            }
+            
+            .content-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .stats {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }

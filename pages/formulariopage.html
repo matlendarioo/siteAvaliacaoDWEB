@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Clientes - Rise Company</title>
+    <link rel="stylesheet" href="../styles/pages-style/formulariopage-style/formpage-style-layoutbody.css">
+    <link rel="stylesheet" href="../styles/pages-style/formulariopage-style/formpage-responsivedesign.css">
+    <link rel="stylesheet" href="../styles/pages-style/formulariopage-style/keyframes/keyframes-slideIn.css">
+    <script src="../scripts/pages-script/formulariopage-script/formpage-script.js" defer></script>
+    <link rel="icon" type="image/png" href="../images/formpage-images/favicon.ico">
+</head>
+<body>
+    <section class="container">
+        <section class="header">
+            <h1>RISE COMPANY</h1>
+            <p>Formulário de Cadastro de Clientes</p>
+        </section>
+
+        <section class="form-container">
+            <form id="clientForm">
+                <aside class="form-row">
+                    <section class="form-group">
+                        <label for="nomeCompleto">Nome Completo <p class="required">*</p></label>
+                        <input type="text" id="nomeCompleto" name="nomeCompleto" required>
+                    </section>
+                    <section class="form-group">
+                        <label for="email">E-mail <p class="required">*</p></label>
+                        <input type="email" id="email" name="email" required>
+                    </section>
+                </aside>
+
+                <aside class="form-row">
+                    <section class="form-group">
+                        <label for="telefone">Telefone <p class="required">*</p></label>
+                        <input type="tel" id="telefone" name="telefone" required>
+                    </section>
+                    <section class="form-group">
+                        <label for="empresa">Nome da Empresa <p class="required">*</p></label>
+                        <input type="text" id="empresa" name="empresa" required>
+                    </section>
+                </aside>
+
+                <aside class="form-row">
+                    <section class="form-group">
+                        <label for="cargo">Cargo na Empresa</label>
+                        <input type="text" id="cargo" name="cargo">
+                    </section>
+                    <section class="form-group">
+                        <label for="segmento">Segmento de Negócio <p class="required">*</p></label>
+                        <select id="segmento" name="segmento" required>
+                            <option value="">Selecione um segmento</option>
+                            <option value="E-commerce">E-commerce</option>
+                            <option value="Tecnologia">Tecnologia</option>
+                            <option value="Saúde">Saúde</option>
+                            <option value="Educação">Educação</option>
+                            <option value="Alimentação">Alimentação</option>
+                            <option value="Beleza">Beleza</option>
+                            <option value="Consultoria">Consultoria</option>
+                            <option value="Imobiliário">Imobiliário</option>
+                            <option value="Outros">Outros</option>
+                        </select>
+                    </section>
+                </aside>
+
+                <aside class="form-row">
+                    <section class="form-group">
+                        <label for="faturamento">Faturamento Mensal</label>
+                        <select id="faturamento" name="faturamento">
+                            <option value="">Selecione uma faixa</option>
+                            <option value="Até R$ 50.000">Até R$ 50.000</option>
+                            <option value="R$ 50.001 - R$ 100.000">R$ 50.001 - R$ 100.000</option>
+                            <option value="R$ 100.001 - R$ 500.000">R$ 100.001 - R$ 500.000</option>
+                            <option value="R$ 500.001 - R$ 1.000.000">R$ 500.001 - R$ 1.000.000</option>
+                            <option value="Acima de R$ 1.000.000">Acima de R$ 1.000.000</option>
+                        </select>
+                    </section>
+                    <section class="form-group">
+                        <label for="servicos">Serviços de Interesse <p class="required">*</p></label>
+                        <select id="servicos" name="servicos" required>
+                            <option value="">Selecione um serviço</option>
+                            <option value="Facebook Ads">Facebook Ads</option>
+                            <option value="Google Ads">Google Ads</option>
+                            <option value="Site de Alta Conversão">Site de Alta Conversão</option>
+                            <option value="Aplicativo Mobile">Aplicativo Mobile</option>
+                            <option value="Gestão de Redes Sociais">Gestão de Redes Sociais</option>
+                            <option value="Análise de Dados">Análise de Dados</option>
+                            <option value="Automação de Vendas">Automação de Vendas</option>
+                            <option value="Consultoria Completa">Consultoria Completa</option>
+                        </select>
+                    </section>
+                </aside>
+
+                <section class="form-group">
+                    <label for="observacoes">Observações e Objetivos</label>
+                    <textarea id="observacoes" name="observacoes" placeholder="Conte-nos mais sobre seus objetivos e necessidades específicas..."></textarea>
+                </section>
+
+                <section class="button-group">
+                    <button type="submit" class="btn btn-primary">Enviar Formulário</button>
+                    <button type="button" class="btn btn-secondary" onclick="limparFormulario()">Limpar Dados</button>
+                </section>
+            </form>
+
+            <section id="resultContainer" class="result-container">
+                <h2>📋 Dados do Cliente Cadastrado</h2>
+                <section id="resultContent"></section>
+            </section>
+        </section>
+    </section>
+</body>
+</html>

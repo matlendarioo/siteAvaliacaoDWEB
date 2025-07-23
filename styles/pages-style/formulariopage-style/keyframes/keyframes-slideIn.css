@@ -1,0 +1,41 @@
+ @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .result-container h2 {
+            color: #333;
+            margin-bottom: 20px;
+            text-align: center;
+            font-size: 1.8em;
+        }
+
+        .result-item {
+            background: white;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            border-left: 4px solid #667eea;
+        }
+
+        .result-item strong {
+            color: #333;
+            display: inline-block;
+            width: 150px;
+            font-weight: bold;
+        }
+
+        .result-item span {
+            color: #666;
+        }
+
+        .required {
+            color: #dc3545;
+        }

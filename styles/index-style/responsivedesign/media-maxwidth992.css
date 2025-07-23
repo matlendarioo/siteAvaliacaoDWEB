@@ -1,0 +1,77 @@
+ @media (min-width: 992px) {
+            .container {
+                padding: 10px;
+            }
+
+            .header-content h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero-content h2 {
+                font-size: 2.5rem;
+            }
+
+            .hero-content summary {
+                font-size: 1.2rem;
+            }
+
+            .content-section1 h2 {
+                font-size: 2rem;
+            }
+
+            .content-section1 summary {
+                font-size: 1.3rem;
+            }
+
+            .content-section1 p {
+                font-size: 1.2rem;
+            }
+
+            .skills-grid, .depoimentos-container{
+                grid-template-columns: 1fr;
+            }
+
+             .depoimento-header {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .depoimento-avatar {
+                width: 100px;
+                height: 100px;
+            }
+
+                        .footer-content {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+            
+            .footer-bottom {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .footer-links {
+                justify-content: center;
+            }
+            
+            .newsletter-form {
+                flex-direction: column;
+            }
+            
+            .social-links {
+                justify-content: center;
+            }
+            
+            .header h1 {
+                font-size: 2rem;
+            }
+            
+            .content-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .stats {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
